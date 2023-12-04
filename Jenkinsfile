@@ -24,6 +24,15 @@ pipeline {
                 '''
             }
         }
+        stage('Time for coffee') {
+            steps {
+                echo "Time for coffee.."
+                sh '''
+                echo "doing test stuff.."
+                '''
+            }
+        }
+
         stage('Deliver') {
             steps {
                 echo 'Deliver....'
